@@ -1,0 +1,13 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Hello World
+on:
+  push:
+    branches: [ "main" ]
+jobs: 
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      # - uses: actions/checkout@v4
+      - name: Echo text
+        run: echo "Hello, world!"
